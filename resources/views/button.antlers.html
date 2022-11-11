@@ -1,0 +1,14 @@
+{{ like:scripts }}
+
+<form action="{{ route_store }}" method="POST" title="like form">
+    {{ csrf_field }}
+    <input type="hidden" name="entry_id" value="{{ id }}">
+    <div class="flex">
+        <button data-id="{{ id }}" class="btn_like background__heart">
+        </button>
+        <div class="like__detail">
+            {{ (likes == 0) ? '0' : likes}}
+            {{ (likes == 1) ? 'Like' : 'Likes'}}
+        </div>
+    </div>
+</form>

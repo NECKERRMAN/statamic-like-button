@@ -1,0 +1,19 @@
+{
+    "name": "neckerrman/like",
+    "autoload": {
+        "psr-4": {
+            "Neckerrman\\Like\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Like",
+            "description": "Like Button addon"
+        },
+        "laravel": {
+            "providers": [
+                "Neckerrman\\Like\\ServiceProvider"
+            ]
+        }
+    }
+}

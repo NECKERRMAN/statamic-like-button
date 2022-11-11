@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.background__heart {
+    background-image: url(../images/heart-regular.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+}
+
+/* .btn_like::after{
+    content: "";
+    position: absolute;
+    bottom: calc(0 + 1rem);
+    height: 1rem;
+    width: 1rem;
+    left: 50%;
+    background-color: rgb(239, 68, 68);
+}
+ */
+.background__heart--active {
+    background-image: url(../images/heart-solid.svg);
+}
+
+
+.btn_like {
+    background-color: rgb(239, 68, 68);
+    color: white;
+    transition: all ease-in-out 200ms;
+    padding: 0.75rem 1.25rem;
+    margin: 0.5rem 0;
+    border-radius: 16px;
+    margin-right: 0.5rem;
+}
+
+.like__detail {
+    border: 2px solid rgb(239, 68, 68);
+    padding: 0.5rem 1.25rem;
+    margin: 0.5rem 0;
+    border-radius: 16px;
+    background-color: rgb(239, 68, 68);
+    color: white;
+    font-weight: 700;
+}
+
+.btn_like:hover {
+    background-color: rgb(244, 108, 108);
+}
+
